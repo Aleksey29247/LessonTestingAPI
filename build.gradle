@@ -1,3 +1,5 @@
+import java.lang.reflect.Type
+
 plugins {
     id 'java'
 }
@@ -8,6 +10,8 @@ version '1.0-SNAPSHOT'
 sourceCompatibility = 11
 compileJava.options.encoding = 'UTF-8'
 compileTestJava.options.encoding = 'UTF-8'
+
+
 
 repositories {
     mavenCentral()
@@ -22,6 +26,6 @@ dependencies {
 
 }
 
-test {
+test{
     useJUnitPlatform()
 }
