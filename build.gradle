@@ -31,7 +31,8 @@ task startServer(type:Exec){
     //Windows
     //commandLine 'cmd', '/c','java -jar ./artifacts/app-mbank.jar'
     //Linux
-    commandLine 'sh','java -jar ./artifacts/app-mbank.jar'
+    commandLine 'sh','ls'
+    //commandLine 'sh','java -jar ./artifacts/app-mbank.jar'
 }
 
 task runServer(type:Exec){
