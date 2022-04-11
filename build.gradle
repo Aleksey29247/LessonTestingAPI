@@ -31,9 +31,12 @@ task startServer(type:Exec){
     //Windows
     //commandLine 'cmd', '/c','java -jar ./artifacts/app-mbank.jar'
     //Linux
-    commandLine './runServer.sh'
+    commandLine 'java -jar ./artifacts/app-mbank.jar'
 }
 
+task runServer(type:Exec){
+    commandLine './runServer.sh'
+}
 test{
     useJUnitPlatform()
 }
