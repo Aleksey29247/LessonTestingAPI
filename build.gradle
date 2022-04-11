@@ -27,7 +27,11 @@ dependencies {
 }
 
 task startServer(type:Exec){
-    commandLine 'sh', 'java -jar ./artifacts/app-mbank.jar'
+    //commandLine 'cmd','/c','dir'
+    //Windows
+    //commandLine 'cmd', '/c','java -jar ./artifacts/app-mbank.jar'
+    //Linux
+    commandLine './runServer.sh'
 }
 
 test{
