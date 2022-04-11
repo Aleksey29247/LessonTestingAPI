@@ -35,7 +35,7 @@ task startServer(type:Exec){
 }
 
 task runServer(type:Exec){
-    commandLine './runServer.sh'
+    commandLine 'sh' ,'./runServer.sh'
 }
 test{
     useJUnitPlatform()
