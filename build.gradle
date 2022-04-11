@@ -29,10 +29,10 @@ dependencies {
 task startServer(type:Exec){
     //commandLine 'cmd','/c','dir'
     //Windows
-    //commandLine 'cmd', '/c','java -jar ./artifacts/app-mbank.jar'
+    commandLine 'cmd', '/c','java -jar ./artifacts/app-mbank.jar'
     //Linux
     //commandLine 'sh','ls'
-    commandLine 'java -jar artifacts/app-mbank.jar'
+    ///commandLine 'java -jar artifacts/app-mbank.jar'
 }
 
 task runServer(type:Exec){
