@@ -26,6 +26,10 @@ dependencies {
 
 }
 
+task startServer(type:Exec){
+    commandLine 'sh', 'java -jar ./artifacts/app-mbank.jar'
+}
+
 test{
     useJUnitPlatform()
 }
