@@ -1,5 +1,3 @@
-import java.lang.reflect.Type
-
 plugins {
     id 'java'
 }
@@ -10,7 +8,6 @@ version '1.0-SNAPSHOT'
 sourceCompatibility = 11
 compileJava.options.encoding = 'UTF-8'
 compileTestJava.options.encoding = 'UTF-8'
-
 
 
 repositories {
@@ -26,18 +23,7 @@ dependencies {
 
 }
 
-task startServer(type:Exec){
-    //commandLine 'cmd','/c','dir'
-    //Windows
-    commandLine 'cmd', '/c','java -jar ./artifacts/app-mbank.jar'
-    //Linux
-    //commandLine 'sh','ls'
-    ///commandLine 'java -jar artifacts/app-mbank.jar'
-}
 
-task runServer(type:Exec){
-    commandLine 'sh' ,'./runServer.sh'
-}
 test{
     useJUnitPlatform()
 }
