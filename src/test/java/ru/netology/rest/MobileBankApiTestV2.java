@@ -3,7 +3,7 @@ package ru.netology.rest;
 import io.restassured.http.ContentType;
 import org.junit.jupiter.api.Test;
 
-import java.io.IOException;
+
 
 import static io.restassured.RestAssured.given;
 
